@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MeteoHub</title>
+    <link rel="icon"
+          href="https://cdn.discordapp.com/attachments/1059215485012549703/1175976039365738546/meteohub-favicon-color.png?ex=656d3008&is=655abb08&hm=859ca150b1dd622b7f913372de19c180661e1fa2317a06775e44f9a86f5d3133&"
+          type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <style>
+        .header {
+            overflow: hidden;
+            min-height: 120px;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+            z-index: 100;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            min-height: 300px;
+            height: 80%;
+        }
+
+        .main {
+        	background-color: rgba(0, 0, 0, 0.54);
+            border-radius: 30px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1300px;
+  			margin: 10px;
+            backdrop-filter: blur(2.5px);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: #FFFFFF;
+        }
+
+        .info {
+        	display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 1000px;
+        }
+
+        .button {
+            background-color: #16609c;
+            color: #fff;
+            font: inherit;
+            font-size:30px;
+            border-radius: 50px;
+            padding: 16px 24px;
+            border-color: transparent;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .button:hover {
+            background-color: #3380c5;
+            transition: 0.2s;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        body, html {
+            height: 100%;
+            line-height: 1.8;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+        	background-image: url(https://cdn.discordapp.com/attachments/1059215485012549703/1175566964794609674/night-lake-landscape-flat-illustration-mountain-river-and-starry-sky-scene-background_212168-728-transformed.jpeg?ex=656bb30d&is=65593e0d&hm=fd1ceec73f32bb6cd8ea54daf848d1d649c330b9551b601ea1d48eaa4d0ad73c&);
+  			background-repeat: no-repeat;
+            background-attachment: fixed;
+  			background-size: cover;
+        }
+
+        * {
+            box-sizing: inherit;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container" id="Navbar" style="padding:0 20px;">
+            <div class="logo">
+                <a href="" class="container_item">
+                    <img src="https://cdn.discordapp.com/attachments/1059215485012549703/1175976203887321138/logo-no-background.png?ex=656d302f&is=655abb2f&hm=f0f161a5db022eea5032691824a228ebe26f36d0c2062e469292fe9b1497213b&"
+                    class="logo-image" alt="MeteoHub" width="212" height="55">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="center-container">
+        <div class="main">
+            <div class="info">
+                <h2>MeteoHub is a streamlined weather tracking website. Search for any city, access current weather, and
+                    save it to your personalized list for quick reference.</h2>
+                <button class="button"><a href="{% url 'home' %}">Get started</a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
